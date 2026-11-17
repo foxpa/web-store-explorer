@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<title>Product Explorer & Favorites</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header>
+<h1>Web Store Explorer</h1>
+<div class='controls'>
+<input type='text' id='search-input' placeholder='Search by title...'>
+<button id='search-btn'>Search</button>
+<button id='fetch-btn'>Show All</button>
+</div>
+</header>
+<p id='status-message'></p>
+<main class='dashboard'>
+<section>
+<h2>Available Products</h2>
+<div id='results-grid' class='grid'></div>
+</section>
+<aside>
+<h2>My Favorites (<span id='fav-counter'>0</span>)</h2>
+<div id='favorites-list' class='fav-list'></div>
+</aside>
+</main>
+<script src='app.js'></script>
+</body>
+</html>
